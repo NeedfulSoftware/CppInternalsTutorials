@@ -1,0 +1,15 @@
+toolsets = gnu vs2015 vs2013;
+
+gnu.makefile = ../GNUmakefile/GNUmakefile;
+vs2013.solutionfile = ../VC12/HelloWorld.sln;
+vs2015.solutionfile = ../VC14/HelloWorld.sln;
+
+program HelloWorld
+{
+    archs = x86 x86_64;
+
+    sources
+    {
+        ../../Source/main.cpp
+    }
+}
